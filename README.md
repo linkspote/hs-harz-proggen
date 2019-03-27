@@ -1,1 +1,1 @@
-# hs-harz-eidp
+# hs-harz-proggen
