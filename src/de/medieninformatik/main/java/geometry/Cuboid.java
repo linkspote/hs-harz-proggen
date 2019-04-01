@@ -2,7 +2,7 @@ package geometry;
 
 /**
  * The <code>Cuboid</code> class extends the abstract <code>GeoObject</code> class which forces subclasses to implement
- * own versions of the getArea and equals method. ATTENTION: A cuboid is a 3D shape.
+ * own versions of the equals method. ATTENTION: A cuboid is a 3D shape.
  *
  * @author Kai Gutsmann (m26667)
  * @author Kevin Kleiber (m26675)
@@ -80,17 +80,6 @@ public class Cuboid extends GeoObject {
     }
 
     /**
-     * This method returns the area of the current cuboid using the corresponding formula of 2 * (length * width + width
-     * * height + length * height).
-     *
-     * @return Returns a double representing the area.
-     */
-    @Override
-    public double getArea() {
-        return 2 * (iLength * iWidth + iWidth * iHeight + iLength * iHeight);
-    }
-
-    /**
      * This method can be used to check whether the current cuboid is equal to another one or not.
      *
      * @param p_oOther Represents the other object to compare the current one with.
@@ -106,9 +95,20 @@ public class Cuboid extends GeoObject {
         if (p_oOther != null && getClass() == p_oOther.getClass()) {
             // Cast other object to cuboid
             Cuboid oOther = (Cuboid) p_oOther;
-            // Set value of bool comparing the class attributes
+
+            // Set value of bool comparing the class attributes while checking for all possible combinations
             bResult = (Integer.compare(iLength, oOther.iLength) == 0 && Integer.compare(iWidth, oOther.iWidth) == 0 &&
-                    Integer.compare(iHeight, oOther.iHeight) == 0);
+                          Integer.compare(iHeight, oOther.iHeight) == 0) ||
+                      (Integer.compare(iLength, oOther.iLength) == 0 && Integer.compare(iWidth, oOther.iHeight) == 0 &&
+                          Integer.compare(iHeight, oOther.iWidth) == 0) ||
+                      (Integer.compare(iLength, oOther.iWidth) == 0 && Integer.compare(iWidth, oOther.iLength) == 0 &&
+                          Integer.compare(iHeight, oOther.iHeight) == 0) ||
+                      (Integer.compare(iLength, oOther.iWidth) == 0 && Integer.compare(iWidth, oOther.iHeight) == 0 &&
+                          Integer.compare(iHeight, oOther.iLength) == 0) ||
+                      (Integer.compare(iLength, oOther.iHeight) == 0 && Integer.compare(iWidth, oOther.iWidth) == 0 &&
+                          Integer.compare(iHeight, oOther.iLength) == 0) ||
+                      (Integer.compare(iLength, oOther.iHeight) == 0 && Integer.compare(iWidth, oOther.iLength) == 0 &&
+                          Integer.compare(iHeight, oOther.iWidth) == 0);
         }
 
         // Return either true when they are equal or false if they are unequal

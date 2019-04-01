@@ -15,8 +15,7 @@ import java.util.ArrayList;
 public class SetList<T> extends ArrayList<T> {
 
     /**
-     * The <code>SetList</code> constructor calls the constructor of its superior class and therefore creates an empty
-     * set list with the default capacity of ten.
+     * The <code>SetList</code> constructor calls the constructor of its superior class.
      */
     public SetList () {
         super();

@@ -10,13 +10,6 @@ package geometry;
  */
 public abstract class GeoObject {
     /**
-     * This method returns the area of the current geometrical object using the corresponding formula.
-     *
-     * @return Returns a double representing the area.
-     */
-    public abstract double getArea();
-
-    /**
      * This method returns a boolean based on the equality of the compared objects.
      *
      * @param p_oOther Represents the other object to compare the current one with.

@@ -2,7 +2,7 @@ package geometry;
 
 /**
  * The <code>Sphere</code> class extends the abstract <code>GeoObject</code> class which forces subclasses to implement
- * own versions of the getArea and equals method. ATTENTION: A sphere is a 3D shape.
+ * own versions of the equals method. ATTENTION: A sphere is a 3D shape.
  *
  * @author Kai Gutsmann (m26667)
  * @author Kevin Kleiber (m26675)
@@ -37,17 +37,6 @@ public class Sphere extends GeoObject {
      */
     public void setRadius(int p_iRadius) {
         this.iRadius = p_iRadius;
-    }
-
-    /**
-     * This method returns the area of the current sphere using the corresponding formula of
-     * 4 * PI * radius to the power of 2.
-     *
-     * @return Returns a double representing the area.
-     */
-    @Override
-    public double getArea() {
-        return 4 * Math.PI * Math.pow(iRadius, 2);
     }
 
     /**
