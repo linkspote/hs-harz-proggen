@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46461b0d-06f3-4486-941f-d59b018a1209" name="Default Changelist" comment="[Feature] Restore original master branch&#10;[Feature] Moved linked list to branch linkedList_09042019">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/hs-harz-proggen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a5_LinkedList/A5_LinkedList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/A5_LinkedList.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a5_LinkedList/src/de/medieninformatik/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a5_LinkedList/src/de/medieninformatik/main/java/MyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a5_LinkedList/src/de/medieninformatik/main/java/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/A5_LinkedList.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="103" lean-forward="true" selection-start-line="5" selection-start-column="103" selection-end-line="6" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/hs-harz-proggen.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="102" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="8e6ff256-4bd1-4814-aa0d-dd6cab0417ea" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/sets/Sets.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/geometry/RectangleTest.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/geometry/CircleTest.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/GeoObject.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/Circle.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/Cuboid.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/Sphere.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/sets/SetList.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/geometry/CuboidTest.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/geometry/SphereTest.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/sets/SetListTest.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/sets/SetsTest.java" />
+        <option value="$PROJECT_DIR$/.idea/hs-harz-proggen.iml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hs-harz-proggen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hs-harz-proggen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hs-harz-proggen" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hs-harz-proggen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hs-harz-proggen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hs-harz-proggen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="medieninformatik" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hs-harz-proggen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="medieninformatik" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553973405026" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.testRunning" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="sets" />
+      <recent name="geometry" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen\" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="hs-harz-proggen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46461b0d-06f3-4486-941f-d59b018a1209" name="Default Changelist" comment="" />
+      <created>1553673187207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553673187207</updated>
+      <workItem from="1553673188566" duration="751000" />
+      <workItem from="1553676151471" duration="5000" />
+      <workItem from="1553676170897" duration="4588000" />
+      <workItem from="1553698845623" duration="1621000" />
+      <workItem from="1553700490287" duration="681000" />
+      <workItem from="1553702159851" duration="562000" />
+      <workItem from="1553951607202" duration="49000" />
+      <workItem from="1553951794350" duration="13478000" />
+      <workItem from="1554051227369" duration="4677000" />
+      <workItem from="1554058179469" duration="2787000" />
+      <workItem from="1554127513603" duration="14878000" />
+      <workItem from="1554150595235" duration="25000" />
+      <workItem from="1554150702532" duration="40000" />
+      <workItem from="1554836762085" duration="86000" />
+      <workItem from="1554836867753" duration="671000" />
+      <workItem from="1554837613631" duration="314000" />
+    </task>
+    <task id="LOCAL-00001" summary="[Feature] Initial commit">
+      <created>1554060609981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554060609981</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Feature] Removed unnecessary getArea() method&#10;[Feature] Adjusted equals() method of Cuboids class&#10;[Feature] Added Unit tests">
+      <created>1554142261346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554142261346</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Feature] Restore original master branch&#10;[Feature] Moved linked list to branch linkedList_09042019">
+      <created>1554837311952</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554837311952</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 30m 13s.xml">
+      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 30m 26s.xml">
+      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 33m 29s.xml">
+      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 33m 57s.xml">
+      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 34m 07s.xml">
+      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetsTest_getUnion - 2019.04.01 at 19h 36m 59s.xml">
+      <configuration name="SetsTest.getUnion" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CuboidTest - 2019.04.01 at 20h 07m 40s.xml">
+      <configuration name="CuboidTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SphereTest - 2019.04.01 at 20h 07m 49s.xml">
+      <configuration name="SphereTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetListTest - 2019.04.01 at 20h 08m 01s.xml">
+      <configuration name="SetListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SetsTest - 2019.04.01 at 20h 08m 15s.xml">
+      <configuration name="SetsTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="45213000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18976545" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3261105" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49946696" weight="0.32827735" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Feature] Initial commit" />
+    <MESSAGE value="[Feature] Removed unnecessary getArea() method&#10;[Feature] Adjusted equals() method of Cuboids class&#10;[Feature] Added Unit tests" />
+    <MESSAGE value="[Feature] Restore original master branch&#10;[Feature] Moved linked list to branch linkedList_09042019" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feature] Restore original master branch&#10;[Feature] Moved linked list to branch linkedList_09042019" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/description.html" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding>
+            <element signature="e#5877#5878#0" expanded="true" />
+            <element signature="e#5913#5914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/geometry/CircleTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/Cuboid.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/GeoObject.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/geometry/RectangleTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/Circle.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0-M1/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="258" column="23" selection-start-line="258" selection-start-column="23" selection-end-line="258" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/Rectangle.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/geometry/Sphere.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+          <folding>
+            <element signature="e#11274#11275#0" expanded="true" />
+            <element signature="e#11312#11313#0" expanded="true" />
+            <element signature="e#11657#11658#0" expanded="true" />
+            <element signature="e#11704#11705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/sets/SetList.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/sets/Sets.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/geometry/CuboidTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/geometry/SphereTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/sets/SetsTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/sets/SetListTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A5_LinkedList.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="103" lean-forward="true" selection-start-line="5" selection-start-column="103" selection-end-line="6" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/hs-harz-proggen.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="102" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>A3_B_WdhGenerischeDatentypen</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
