@@ -60,9 +60,25 @@ public class MyLinkedList<T> implements List<T>, Deque<T> {
         return (size == 0);
     }
 
+    /**
+     * This methods checks if an element is contained in the list.
+     * @param o Element which is tested
+     * @return Ture if element is in list, false otherwise
+     */
     @Override
     public boolean contains(Object o) {
-        return false;
+        // Check if head contains the element
+        Node temp = head;
+        boolean res = (head.data.equals(o));
+        // check if later element contain the element
+        do {
+            temp = temp.next;
+            if(temp.data.equals(o)) {
+                res = true;
+                break;
+            }
+        } while (temp != tail);
+        return res;
     }
 
     @Override
@@ -75,18 +91,31 @@ public class MyLinkedList<T> implements List<T>, Deque<T> {
         return null;
     }
 
+    /**
+     * Copies all elements of the list into an array of type Object.
+     * @return Array of elements of type object.
+     */
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        // Get array and first element
+        Object[] arrTemp = new Object[size];
+        Node temp = head;
+        // Copy elements into array
+        for (int i = 0; i < arrTemp.length; i++) {
+            arrTemp[i] = temp.data;
+            temp = temp.next;
+        }
+        return arrTemp;
     }
 
     @Override
     public <T1> T1[] toArray(T1[] a) {
+        // ???
         return null;
     }
 
     /**
-     * Adds an element at first position.
+     * Adds an element at first position (head).
      * @param t Element that is being added
      */
     @Override
@@ -107,7 +136,7 @@ public class MyLinkedList<T> implements List<T>, Deque<T> {
     }
 
     /**
-     * Adds an element at last position.
+     * Adds an element at last position (tail).
      * @param t Element that is being added
      */
     @Override
@@ -175,26 +204,36 @@ public class MyLinkedList<T> implements List<T>, Deque<T> {
         return temp.data;
     }
 
+    /**
+     * This method is used to remove the first element of the list and give a reference to it.
+     * @return Returns first element of the list or null, if list is empty.
+     */
     @Override
     public T pollFirst() {
-        return null;
+        if(size == 0) return null;
+        return removeFirst();
     }
 
+    /**
+     * This method is used to remove the last element of the list and give a reference to it.
+     * @return Returns last element of the list or null, if the list is empty.
+     */
     @Override
     public T pollLast() {
-        return null;
+        if(size == 0) return null;
+        return removeLast();
     }
 
+    // peek or remove ???
     @Override
     public T getFirst() {
-
-        return null;
+        return peekFirst();
     }
 
+    // ???
     @Override
     public T getLast() {
-
-        return null;
+        return peekLast();
     }
 
     /**
@@ -231,29 +270,54 @@ public class MyLinkedList<T> implements List<T>, Deque<T> {
         return false;
     }
 
+    /**
+     * This method adds an element to the end of the list.
+     * @param t Element to be added
+     * @return Returns true if Element was added to the list, false otherwise
+     */
     @Override
     public boolean offer(T t) {
-        return false;
+        return offerLast(t);
     }
 
+    /**
+     * Removes the first element of the list and returns reference to it.
+     * @return Reference to first element.
+     */
     @Override
     public T remove() {
-        return null;
+        return removeFirst();
     }
 
+    /**
+     * Removes the first element of the list and returns a reference to it.
+     * @return Reference to first element or null, if list is empty.
+     */
     @Override
     public T poll() {
-        return null;
+        if(size == 0) {
+            return null;
+        } else return removeFirst();
     }
 
+
+    /**
+     * This method gives a reference to the first element of the list without removing it.
+     * @return First element of the list.
+     */
     @Override
     public T element() {
-        return null;
+        if(size == 0) throw new NoSuchElementException();
+        return peekFirst();
     }
 
+    /**
+     * Returns a reference to the first element (head) of list, but does not remove it.
+     * @return Reference to first element or null, if list is empty.
+     */
     @Override
     public T peek() {
-        return null;
+        return peekFirst();
     }
 
     @Override
@@ -272,14 +336,23 @@ public class MyLinkedList<T> implements List<T>, Deque<T> {
         return false;
     }
 
+    /**
+     * This method adds an element to the front of the list. It is equivalent to <code>addFirst(T)</code>.
+     * @param t Element to be added to the list.
+     */
     @Override
     public void push(T t) {
-
+        addFirst(t);
     }
 
+    /**
+     * This method removes the first element from the list and gives a reference to it. It is equivalent to
+     * <code>removeFirst()</code>.
+     * @return
+     */
     @Override
     public T pop() {
-        return null;
+        return removeFirst();
     }
 
     @Override
@@ -304,14 +377,43 @@ public class MyLinkedList<T> implements List<T>, Deque<T> {
         // optional
     }
 
+    /**
+     * This methods gives a reference to an element at a specified index.
+     * @param index Index of the element
+     * @return Element at specific index
+     */
     @Override
     public T get(int index) {
-        return null;
+        if(index >= size || index < 0) throw new IndexOutOfBoundsException();
+        // Start looking for the element from head Node
+        Node temp = head;
+        // Go through all elements to the element at given index
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp.data;
     }
 
+    /**
+     * This method replace an element at specified position with a new element and gives a reference to the old element.
+     * @param index Index of the element
+     * @param element New element to be inserted
+     * @return Returns element previously at given index
+     */
     @Override
     public T set(int index, T element) {
-        return null;
+        if(index >= size || index < 0) throw new IndexOutOfBoundsException();
+        // Start looking for the element from head Node
+        Node temp = head;
+        // Go through all elements to the element at given index
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        // Temporarily store previous element
+        T prevData = temp.data;
+        // Set element at specific positioon
+        temp.data = element;
+        return prevData;
     }
 
     @Override
@@ -324,14 +426,42 @@ public class MyLinkedList<T> implements List<T>, Deque<T> {
         return null;
     }
 
+    /**
+     * This method gives the first index at which the specified element appears in the list.
+     * @param o Element to search for
+     * @return Index of the given element or -1, if the element is not in the list
+     */
     @Override
     public int indexOf(Object o) {
-        return 0;
+        int index = -1;
+        // Check if head contains the element
+        Node temp = head;
+        for (int i = 0; i < size; i++) {
+            if(temp.data.equals(o)) {
+                index = i;
+                break;
+            } else temp = temp.next;
+        }
+        return index;
     }
 
+    /**
+     * This method gives the last index at which the specified element appears in the list.
+     * @param o Element to search for
+     * @return Index of the given element or -1, if the element is not in the list
+     */
     @Override
     public int lastIndexOf(Object o) {
-        return 0;
+        int index = -1;
+        // Check if head contains the element
+        Node temp = tail;
+        for (int i = size-1; i >= 0; i--) {
+            if(temp.data.equals(o)) {
+                index = i;
+                break;
+            } else temp = temp.prev;
+        }
+        return index;
     }
 
     @Override
