@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,6 +23,18 @@ public class Main {
         lstr.add("du");
         lstr.add("da");
 
+        lstr.subList(0, 2);
+        Iterator itr = lstr.iterator();
+
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+
+        Iterator itr2 = lstr.descendingIterator();
+        while (itr2.hasNext()) {
+            System.out.println(itr2.next());
+        }
+
         ArrayList<String> arr = new ArrayList<>(4);
         arr.add("!");
 
@@ -38,6 +51,15 @@ public class Main {
 
         System.out.println(arrs);
         System.out.println(arrs2);
+
+        int size = 7;
+        System.out.println(size >> 1);
+        System.out.println(size << 1);
+        size = 16;
+        System.out.println(size >> 1);
+        System.out.println(size << 1);
+
+        lstr.subList(1,3);
 
     }
 }

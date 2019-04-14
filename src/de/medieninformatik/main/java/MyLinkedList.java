@@ -10,6 +10,8 @@ public class MyLinkedList<E> implements List<E> {
     // Declare class attributes
     private int iSize = 0;
     private Node<E> nHead, nTail;
+    private final static String UNSUPPORTED_OPERATION =
+            "The chosen operation is not supported. Please try another one.";
 
     /**
      * Inner class used to store information about the elements of the current linked list implementation. Access
@@ -34,6 +36,203 @@ public class MyLinkedList<E> implements List<E> {
             nPrev = p_nPrev;
             eElem = p_eElem;
             nNext = p_nNext;
+        }
+    }
+
+    /**
+     * Inner class which implements the {@code ListIterator<E>} interface. It is used to traverse through the linked
+     * list.
+     */
+    private class MyListItr implements ListIterator<E> {
+        // Declare class attributes
+        private Node<E> nPrev, nNext;
+        private int iNextIndex;
+
+        /**
+         * Constructs an {@code MyListItr} object to be able to traverse through the elements of the linked list.
+         *
+         * @param p_iIndex Represents the index where the iterator should start from.
+         */
+        public MyListItr (int p_iIndex) {
+            // Set initial values for the class attributes
+            nNext = (p_iIndex == iSize) ? null : getNode(p_iIndex);
+            iNextIndex = p_iIndex;
+        }
+
+        /**
+         * Returns {@code true} if this list iterator has more elements when
+         * traversing the list in the forward direction. (In other words,
+         * returns {@code true} if {@link #next} would return an element rather
+         * than throwing an exception.)
+         *
+         * @return {@code true} if the list iterator has more elements when
+         * traversing the list in the forward direction
+         */
+        @Override
+        public boolean hasNext() {
+            return iNextIndex < iSize;
+        }
+
+        /**
+         * Returns the next element in the list and advances the cursor position.
+         * This method may be called repeatedly to iterate through the list,
+         * or intermixed with calls to {@link #previous} to go back and forth.
+         * (Note that alternating calls to {@code next} and {@code previous}
+         * will return the same element repeatedly.)
+         *
+         * @return the next element in the list
+         * @throws NoSuchElementException if the iteration has no next element
+         */
+        @Override
+        public E next() {
+            // If current element has no successor throw exception
+            if (!hasNext())
+                throw new NoSuchElementException();
+
+            // Store predecessor of successor, get successor and increment next index by one
+            nPrev = nNext;
+            nNext = nNext.nNext;
+            iNextIndex++;
+
+            // Return the successor of the current element
+            return nPrev.eElem;
+        }
+
+        /**
+         * Returns {@code true} if this list iterator has more elements when
+         * traversing the list in the reverse direction.  (In other words,
+         * returns {@code true} if {@link #previous} would return an element
+         * rather than throwing an exception.)
+         *
+         * @return {@code true} if the list iterator has more elements when
+         * traversing the list in the reverse direction
+         */
+        @Override
+        public boolean hasPrevious() {
+            return iNextIndex > 0;
+        }
+
+        /**
+         * Returns the previous element in the list and moves the cursor
+         * position backwards.  This method may be called repeatedly to
+         * iterate through the list backwards, or intermixed with calls to
+         * {@link #next} to go back and forth.  (Note that alternating calls
+         * to {@code next} and {@code previous} will return the same
+         * element repeatedly.)
+         *
+         * @return the previous element in the list
+         * @throws NoSuchElementException if the iteration has no previous
+         *                                element
+         */
+        @Override
+        public E previous() {
+            // If current element has no predecessor throw exception
+            if (!hasPrevious())
+                throw new NoSuchElementException();
+
+            // Get previous element of current element, decrement next index by one
+            nPrev = nNext = (nNext == null) ? nTail : nNext.nPrev;
+            iNextIndex--;
+
+            // Return the predecessor of the current element
+            return nPrev.eElem;
+        }
+
+        /**
+         * Returns the index of the element that would be returned by a
+         * subsequent call to {@link #next}. (Returns list size if the list
+         * iterator is at the end of the list.)
+         *
+         * @return the index of the element that would be returned by a
+         * subsequent call to {@code next}, or list size if the list
+         * iterator is at the end of the list
+         */
+        @Override
+        public int nextIndex() {
+            return iNextIndex;
+        }
+
+        /**
+         * Returns the index of the element that would be returned by a
+         * subsequent call to {@link #previous}. (Returns -1 if the list
+         * iterator is at the beginning of the list.)
+         *
+         * @return the index of the element that would be returned by a
+         * subsequent call to {@code previous}, or -1 if the list
+         * iterator is at the beginning of the list
+         */
+        @Override
+        public int previousIndex() {
+            return iNextIndex - 1;
+        }
+
+        /**
+         * Removes from the list the last element that was returned by {@link
+         * #next} or {@link #previous} (optional operation).  This call can
+         * only be made once per call to {@code next} or {@code previous}.
+         * It can be made only if {@link #add} has not been
+         * called after the last call to {@code next} or {@code previous}.
+         *
+         * @throws UnsupportedOperationException if the {@code remove}
+         *                                       operation is not supported by this list iterator
+         * @throws IllegalStateException         if neither {@code next} nor
+         *                                       {@code previous} have been called, or {@code remove} or
+         *                                       {@code add} have been called after the last call to
+         *                                       {@code next} or {@code previous}
+         */
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
+        }
+
+        /**
+         * Replaces the last element returned by {@link #next} or
+         * {@link #previous} with the specified element (optional operation).
+         * This call can be made only if neither {@link #remove} nor {@link
+         * #add} have been called after the last call to {@code next} or
+         * {@code previous}.
+         *
+         * @param e the element with which to replace the last element returned by
+         *          {@code next} or {@code previous}
+         * @throws UnsupportedOperationException if the {@code set} operation
+         *                                       is not supported by this list iterator
+         * @throws ClassCastException            if the class of the specified element
+         *                                       prevents it from being added to this list
+         * @throws IllegalArgumentException      if some aspect of the specified
+         *                                       element prevents it from being added to this list
+         * @throws IllegalStateException         if neither {@code next} nor
+         *                                       {@code previous} have been called, or {@code remove} or
+         *                                       {@code add} have been called after the last call to
+         *                                       {@code next} or {@code previous}
+         */
+        @Override
+        public void set(E e) {
+            throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
+        }
+
+        /**
+         * Inserts the specified element into the list (optional operation).
+         * The element is inserted immediately before the element that
+         * would be returned by {@link #next}, if any, and after the element
+         * that would be returned by {@link #previous}, if any.  (If the
+         * list contains no elements, the new element becomes the sole element
+         * on the list.)  The new element is inserted before the implicit
+         * cursor: a subsequent call to {@code next} would be unaffected, and a
+         * subsequent call to {@code previous} would return the new element.
+         * (This call increases by one the value that would be returned by a
+         * call to {@code nextIndex} or {@code previousIndex}.)
+         *
+         * @param e the element to insert
+         * @throws UnsupportedOperationException if the {@code add} method is
+         *                                       not supported by this list iterator
+         * @throws ClassCastException            if the class of the specified element
+         *                                       prevents it from being added to this list
+         * @throws IllegalArgumentException      if some aspect of this element
+         *                                       prevents it from being added to this list
+         */
+        @Override
+        public void add(E e) {
+            throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
         }
     }
 
@@ -84,7 +283,6 @@ public class MyLinkedList<E> implements List<E> {
         return indexOf(o) >= 0;
     }
 
-    // TODO: Implement me
     /**
      * Returns an iterator over the elements in this list in proper sequence.
      *
@@ -92,7 +290,7 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return listIterator();
     }
 
     /**
@@ -191,7 +389,7 @@ public class MyLinkedList<E> implements List<E> {
         return a;
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
+    // TODO: Implement me
     /**
      * Appends the specified element to the end of this list (optional
      * operation).
@@ -219,7 +417,7 @@ public class MyLinkedList<E> implements List<E> {
         return false;
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
+    // TODO: Implement me
     /**
      * Removes the first occurrence of the specified element from this list,
      * if it is present (optional operation).  If this list does not contain
@@ -270,7 +468,6 @@ public class MyLinkedList<E> implements List<E> {
         return false;
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
     /**
      * Appends all of the elements in the specified collection to the end of
      * this list, in the order that they are returned by the specified
@@ -294,10 +491,9 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public boolean addAll(Collection<? extends E> c) {
-        return false;
+        throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
     /**
      * Inserts all of the elements in the specified collection into this
      * list at the specified position (optional operation).  Shifts the
@@ -327,10 +523,9 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        return false;
+        throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
     /**
      * Removes from this list all of its elements that are contained in the
      * specified collection (optional operation).
@@ -351,10 +546,9 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public boolean removeAll(Collection<?> c) {
-        return false;
+        throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
     /**
      * Retains only the elements in this list that are contained in the
      * specified collection (optional operation).  In other words, removes
@@ -377,10 +571,9 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public boolean retainAll(Collection<?> c) {
-        return false;
+        throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
     /**
      * Removes all of the elements from this list (optional operation).
      * The list will be empty after this call returns.
@@ -390,7 +583,7 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public void clear() {
-
+        throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
     // TODO: implement me
@@ -407,7 +600,6 @@ public class MyLinkedList<E> implements List<E> {
         return null;
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
     /**
      * Replaces the element at the specified position in this list with the
      * specified element (optional operation).
@@ -428,10 +620,10 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public E set(int index, E element) {
-        return null;
+        throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
+    // TODO: Implement me
     /**
      * Inserts the specified element at the specified position in this list
      * (optional operation).  Shifts the element currently at that position
@@ -456,7 +648,7 @@ public class MyLinkedList<E> implements List<E> {
 
     }
 
-    // TODO: optional operation should throw UnsupportedOperationException
+    // TODO: Implement me
     /**
      * Removes the element at the specified position in this list (optional
      * operation).  Shifts any subsequent elements to the left (subtracts one
@@ -577,7 +769,6 @@ public class MyLinkedList<E> implements List<E> {
         return -1;
     }
 
-    // TODO: implement me
     /**
      * Returns a list iterator over the elements in this list (in proper
      * sequence).
@@ -587,10 +778,9 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public ListIterator<E> listIterator() {
-        return null;
+        return listIterator(0);
     }
 
-    // TODO: implement me
     /**
      * Returns a list iterator over the elements in this list (in proper
      * sequence), starting at the specified position in the list.
@@ -608,10 +798,13 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public ListIterator<E> listIterator(int index) {
-        return null;
+        if (!(index >= 0 && index <= iSize))
+            throw new IndexOutOfBoundsException(index);
+
+        return new MyListItr(index);
     }
 
-    // TODO: implement me
+    // TODO: Implement me
     /**
      * Returns a view of the portion of this list between the specified
      * {@code fromIndex}, inclusive, and {@code toIndex}, exclusive.  (If
@@ -649,5 +842,43 @@ public class MyLinkedList<E> implements List<E> {
     @Override
     public List<E> subList(int fromIndex, int toIndex) {
         return null;
+    }
+
+    /**
+     * Returns the node at the specified index.
+     *
+     * @param p_iIndex Represents the index of the element to search for.
+     * @return         Returns the node at the specified index.
+     */
+    private Node<E> getNode(int p_iIndex) {
+        /*
+         * Check whether the element is part of the first half of the linked list
+         * iSize >> 1 (right bit shifting) equals iSize / 2 with Integer values
+         * Example:
+         * iSize = 5; iSize >> 1 = 2 | iSize = 6; iSize >> 1 = 3
+         */
+        if (p_iIndex < (iSize >> 1)) {
+            // Get first node and store it
+            Node<E> nElem = nHead;
+
+            // Loop through the next nodes until the index is reached (forward)
+            for (int i = 0; i < p_iIndex; i++)
+                nElem = nElem.nNext;
+
+            // Return the node at the current index
+            return nElem;
+        }
+        // When the index is located in the second half of the linked list
+        else {
+            // Get last node and store it
+            Node<E> nElem = nTail;
+
+            // Loop through the previous nodes until the index is reached (backwards)
+            for (int i = iSize - 1; i > p_iIndex; i--)
+                nElem = nElem.nPrev;
+
+            // Return the node at the current index
+            return nElem;
+        }
     }
 }
