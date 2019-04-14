@@ -242,6 +242,55 @@ public class MyLinkedList<E> implements List<E> {
     public MyLinkedList() {}
 
     /**
+     * Adds a new element to the end of the linked list.
+     *
+     * @param p_eElem Represents the element to be added to the list.
+     */
+    private void addLast (E p_eElem) {
+        // Store current tail and the new element as unmodifiable nodes
+        final Node<E> nOldTail = nTail;
+        final Node<E> nNewNode = new Node<>(nOldTail, p_eElem, null);
+
+        // Set new tail
+        nTail = nNewNode;
+
+        // If previous tail is null, set head of linked list
+        if (nOldTail == null)
+            nHead = nNewNode;
+        // When previous tail is not null, set successor of it to the new element
+        else
+            nOldTail.nNext = nNewNode;
+
+        // Increment the linked lists size by one
+        iSize++;
+    }
+
+    /**
+     * Adds a new element right before another element of the linked list.
+     *
+     * @param p_eElem    Represents the element to add to the list.
+     * @param p_nNewNext Represents the element which will be the new elements successor.
+     */
+    private void addBefore (E p_eElem, Node<E> p_nNewNext) {
+        // Store current predecessor and the new element as unmodifiable nodes
+        final Node<E> nOldPrev = p_nNewNext.nPrev;
+        final Node<E> nNewNode = new Node<>(nOldPrev, p_eElem, p_nNewNext);
+
+        // Set predecessor of the new elements successor
+        p_nNewNext.nPrev = nNewNode;
+
+        // If the current predecessor is null, set head of linked list
+        if (nOldPrev == null)
+            nHead = nNewNode;
+        // When current predecessor is not null, set successor of it to the new element
+        else
+            nOldPrev.nNext = nNewNode;
+
+        // Increment the linked lists size by one
+        iSize++;
+    }
+
+    /**
      * Returns the number of elements in this list.  If this list contains
      * more than {@code Integer.MAX_VALUE} elements, returns
      * {@code Integer.MAX_VALUE}.
@@ -389,7 +438,6 @@ public class MyLinkedList<E> implements List<E> {
         return a;
     }
 
-    // TODO: Implement me
     /**
      * Appends the specified element to the end of this list (optional
      * operation).
@@ -414,7 +462,8 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public boolean add(E e) {
-        return false;
+        addLast(e);
+        return true;
     }
 
     // TODO: Implement me
@@ -623,7 +672,6 @@ public class MyLinkedList<E> implements List<E> {
         throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
-    // TODO: Implement me
     /**
      * Inserts the specified element at the specified position in this list
      * (optional operation).  Shifts the element currently at that position
@@ -645,7 +693,15 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public void add(int index, E element) {
+        // Check if index is in bounds otherwise throw exception
+        checkPositionIndex(index);
 
+        // Check if the given index equals the linked lists size, if so add new element to end of linked list
+        if (index == iSize)
+            addLast(element);
+        // When the index is not equal to the size, add the new element right before its new successor
+        else
+            addBefore(element, getNode(index));
     }
 
     // TODO: Implement me
@@ -798,9 +854,10 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public ListIterator<E> listIterator(int index) {
-        if (!(index >= 0 && index <= iSize))
-            throw new IndexOutOfBoundsException(index);
+        // Check if index is in bounds otherwise throw exception
+        checkPositionIndex(index);
 
+        // Return the iterator
         return new MyListItr(index);
     }
 
@@ -880,5 +937,17 @@ public class MyLinkedList<E> implements List<E> {
             // Return the node at the current index
             return nElem;
         }
+    }
+
+    /**
+     * Checks if the given index is in bounds of the linked lists size.
+     *
+     * @param index Represents the index to check.
+     * @throws IndexOutOfBoundsException if the index is out of range
+     *                                   ({@code index < 0 || index > size()})
+     */
+    private void checkPositionIndex(int index) {
+        if (!(index >= 0 && index <= iSize))
+            throw new IndexOutOfBoundsException(index);
     }
 }

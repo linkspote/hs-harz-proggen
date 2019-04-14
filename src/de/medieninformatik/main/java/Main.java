@@ -59,7 +59,8 @@ public class Main {
         System.out.println(size >> 1);
         System.out.println(size << 1);
 
-        lstr.subList(1,3);
+        MyLinkedList<String> mllS = new MyLinkedList<>();
+        mllS.removeAll(new MyLinkedList<String>());
 
     }
 }
