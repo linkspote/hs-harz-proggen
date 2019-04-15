@@ -290,6 +290,43 @@ public class MyLinkedList<E> implements List<E> {
         iSize++;
     }
 
+    private E cancelBindings(Node<E> p_nElement) {
+        // Store current elements data, its successor and predecessor in unmodifiable variables
+        final E eElem = p_nElement.eElem;
+        final Node<E> nNext = p_nElement.nNext;
+        final Node<E> nPrev = p_nElement.nPrev;
+
+        // If predecessor is null, set head to successor
+        if (nPrev == null)
+            nHead = nNext;
+        // When predecessor is not null
+        else {
+            // Set new successor of predecessor of p_nElement
+            nPrev.nNext = nNext;
+            // Set predecessor of p_nElement null to delete it
+            p_nElement.nPrev = null;
+        }
+
+        // If successor is null, set tail to predecessor
+        if (nNext == null)
+            nTail = nPrev;
+        // When successor is not null
+        else  {
+            // Set new predecessor of successor of p_nElement
+            nNext.nPrev = nPrev;
+            // Set successor of p_nElement null to delete it
+            p_nElement.nNext = null;
+        }
+
+        // Set data part of p_nElement null to delete it
+        p_nElement.eElem = null;
+        // Decrement the size of linked list
+        iSize--;
+
+        // Return the deleted element
+        return eElem;
+    }
+
     /**
      * Returns the number of elements in this list.  If this list contains
      * more than {@code Integer.MAX_VALUE} elements, returns
@@ -466,7 +503,6 @@ public class MyLinkedList<E> implements List<E> {
         return true;
     }
 
-    // TODO: Implement me
     /**
      * Removes the first occurrence of the specified element from this list,
      * if it is present (optional operation).  If this list does not contain
@@ -490,6 +526,34 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public boolean remove(Object o) {
+        // If given object is null
+        if (o == null) {
+            // Loop through the linked lists elements from head to tail
+            for (Node<E> nElem = nHead; nElem != null; nElem = nElem.nNext) {
+                // If the null element was found
+                if (nElem.eElem == null) {
+                    // Remove the element by cancelling its bindings
+                    cancelBindings(nElem);
+                    // Return true as the element was removed
+                    return true;
+                }
+            }
+        }
+        // When given object is not null
+        else{
+            // Loop through the linked lists elements from head to tail
+            for (Node<E> nElem = nHead; nElem != null; nElem = nElem.nNext) {
+                // If given object equals current element of linked list
+                if (o.equals(nElem)) {
+                    // Remove the element by cancelling its bindings
+                    cancelBindings(nElem);
+                    // Return true as the element was removed
+                    return true;
+                }
+            }
+        }
+
+        // Returns only false when the given object wasn't found
         return false;
     }
 

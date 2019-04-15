@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46461b0d-06f3-4486-941f-d59b018a1209" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="323">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -36,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7232">
+            <state relative-caret-position="7684">
               <caret line="497" selection-start-line="497" selection-end-line="499" selection-end-column="57" />
               <folding>
                 <element signature="e#9843#9844#0" expanded="true" />
@@ -53,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractSequentialList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3408">
+            <state relative-caret-position="3621">
               <caret line="237" column="23" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
               <folding>
                 <element signature="e#8746#8747#0" expanded="true" />
@@ -66,13 +65,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="543" column="20" selection-start-line="543" selection-start-column="20" selection-end-line="543" selection-end-column="20" />
+            <state relative-caret-position="189">
+              <caret line="358" column="19" selection-start-line="358" selection-start-column="19" selection-end-line="358" selection-end-column="19" />
               <folding>
                 <element signature="e#15785#15786#0" expanded="true" />
                 <element signature="e#15834#15835#0" expanded="true" />
                 <element signature="e#16006#16007#0" expanded="true" />
                 <element signature="e#16056#16057#0" expanded="true" />
+                <element signature="e#20313#20314#0" expanded="true" />
+                <element signature="e#20349#20350#0" expanded="true" />
                 <element signature="e#26585#26586#0" expanded="true" />
                 <element signature="e#26632#26633#0" expanded="true" />
                 <element signature="e#29271#29272#0" expanded="true" />
@@ -87,12 +88,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14496">
-              <caret line="948" column="30" selection-start-line="948" selection-start-column="30" selection-end-line="948" selection-end-column="30" />
+            <state relative-caret-position="-173">
+              <caret line="522" column="65" selection-start-line="522" selection-start-column="65" selection-end-line="522" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#35731#35732#0" expanded="true" />
-                <element signature="e#35769#35770#0" expanded="true" />
+                <element signature="e#13818#13819#0" expanded="true" />
+                <element signature="e#14045#14046#0" expanded="true" />
+                <element signature="e#15023#15024#0" expanded="true" />
+                <element signature="e#15289#15290#0" expanded="true" />
+                <element signature="e#24488#24489#0" expanded="true" />
+                <element signature="e#26072#26073#0" expanded="true" />
+                <element signature="e#29436#29437#0" expanded="true" />
+                <element signature="e#30872#30873#0" expanded="true" />
+                <element signature="e#31292#31293#0" expanded="true" />
+                <element signature="e#31747#31748#0" expanded="true" />
+                <element signature="e#33032#33033#0" expanded="true" />
+                <element signature="e#35536#35537#0" expanded="true" />
+                <element signature="e#40302#40303#0" expanded="true" />
+                <element signature="e#43480#43481#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ListIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
+            <state relative-caret-position="2516">
               <caret line="171" column="9" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
             </state>
           </provider>
@@ -110,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1888">
+            <state relative-caret-position="2006">
               <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
               <folding>
                 <element signature="e#3096#3097#0" expanded="true" />
@@ -138,8 +151,8 @@
       <find>contains</find>
       <find>TODO:</find>
       <find>linkLast</find>
-      <find>TODO</find>
       <find>linkBefore</find>
+      <find>TODO</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,52 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,6 +253,52 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Kevin\IdeaProjects\hs-harz-proggen" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="de" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="medieninformatik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,6 +355,9 @@
       </method>
     </configuration>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -370,6 +386,8 @@
       <workItem from="1554837613631" duration="314000" />
       <workItem from="1555237100020" duration="26722000" />
       <workItem from="1555274714917" duration="3920000" />
+      <workItem from="1555280022247" duration="27000" />
+      <workItem from="1555307886266" duration="3597000" />
     </task>
     <task id="LOCAL-00001" summary="[Feature] Initial commit">
       <created>1554060609981</created>
@@ -442,7 +460,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85719000" />
+    <option name="totallyTimeSpent" value="89343000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,16 +474,15 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49729145" visible="true" weight="0.20042644" />
-      <window_info id="Structure" order="1" sideWeight="0.50270855" side_tool="true" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.20469083" />
+      <window_info id="Structure" order="1" sideWeight="0.5056543" side_tool="true" visible="true" weight="0.20469083" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5016251" side_tool="true" weight="0.19829424" />
-      <window_info anchor="bottom" id="Extract Method" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -477,6 +494,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49946696" weight="0.32827735" />
+      <window_info anchor="bottom" id="Extract Method" order="13" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -678,49 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7232">
-          <caret line="497" selection-start-line="497" selection-end-line="499" selection-end-column="57" />
-          <folding>
-            <element signature="e#9843#9844#0" expanded="true" />
-            <element signature="e#9875#9876#0" expanded="true" />
-            <element signature="e#10079#10080#0" expanded="true" />
-            <element signature="e#10117#10118#0" expanded="true" />
-            <element signature="e#13234#13235#0" expanded="true" />
-            <element signature="e#13272#13273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractSequentialList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3408">
-          <caret line="237" column="23" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
-          <folding>
-            <element signature="e#8746#8747#0" expanded="true" />
-            <element signature="e#8783#8784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1888">
-          <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
-          <folding>
-            <element signature="e#3096#3097#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ListIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="171" column="9" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.instrument/sun/instrument/TransformerManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -748,7 +723,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="323">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -756,15 +731,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7684">
+          <caret line="497" selection-start-line="497" selection-end-line="499" selection-end-column="57" />
+          <folding>
+            <element signature="e#9843#9844#0" expanded="true" />
+            <element signature="e#9875#9876#0" expanded="true" />
+            <element signature="e#10079#10080#0" expanded="true" />
+            <element signature="e#10117#10118#0" expanded="true" />
+            <element signature="e#13234#13235#0" expanded="true" />
+            <element signature="e#13272#13273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractSequentialList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3621">
+          <caret line="237" column="23" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
+          <folding>
+            <element signature="e#8746#8747#0" expanded="true" />
+            <element signature="e#8783#8784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="171" column="9" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+          <folding>
+            <element signature="e#3096#3097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="543" column="20" selection-start-line="543" selection-start-column="20" selection-end-line="543" selection-end-column="20" />
+        <state relative-caret-position="189">
+          <caret line="358" column="19" selection-start-line="358" selection-start-column="19" selection-end-line="358" selection-end-column="19" />
           <folding>
             <element signature="e#15785#15786#0" expanded="true" />
             <element signature="e#15834#15835#0" expanded="true" />
             <element signature="e#16006#16007#0" expanded="true" />
             <element signature="e#16056#16057#0" expanded="true" />
+            <element signature="e#20313#20314#0" expanded="true" />
+            <element signature="e#20349#20350#0" expanded="true" />
             <element signature="e#26585#26586#0" expanded="true" />
             <element signature="e#26632#26633#0" expanded="true" />
             <element signature="e#29271#29272#0" expanded="true" />
@@ -777,12 +797,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14496">
-          <caret line="948" column="30" selection-start-line="948" selection-start-column="30" selection-end-line="948" selection-end-column="30" />
+        <state relative-caret-position="-173">
+          <caret line="522" column="65" selection-start-line="522" selection-start-column="65" selection-end-line="522" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#35731#35732#0" expanded="true" />
-            <element signature="e#35769#35770#0" expanded="true" />
+            <element signature="e#13818#13819#0" expanded="true" />
+            <element signature="e#14045#14046#0" expanded="true" />
+            <element signature="e#15023#15024#0" expanded="true" />
+            <element signature="e#15289#15290#0" expanded="true" />
+            <element signature="e#24488#24489#0" expanded="true" />
+            <element signature="e#26072#26073#0" expanded="true" />
+            <element signature="e#29436#29437#0" expanded="true" />
+            <element signature="e#30872#30873#0" expanded="true" />
+            <element signature="e#31292#31293#0" expanded="true" />
+            <element signature="e#31747#31748#0" expanded="true" />
+            <element signature="e#33032#33033#0" expanded="true" />
+            <element signature="e#35536#35537#0" expanded="true" />
+            <element signature="e#40302#40303#0" expanded="true" />
+            <element signature="e#43480#43481#0" expanded="true" />
           </folding>
         </state>
       </provider>
