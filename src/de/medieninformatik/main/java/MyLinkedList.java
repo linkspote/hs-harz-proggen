@@ -290,7 +290,14 @@ public class MyLinkedList<E> implements List<E> {
         iSize++;
     }
 
-    private E cancelBindings(Node<E> p_nElement) {
+    /**
+     * Quits all associations of the given element with other elements in the list by nulling the given element. Also
+     * sets the new successor and predecessor of the associated elements.
+     *
+     * @param p_nElement Represents the element which shall quit its associations.
+     * @return           Returns the element which quited all associations.
+     */
+    private E quitAssociations (Node<E> p_nElement) {
         // Store current elements data, its successor and predecessor in unmodifiable variables
         final E eElem = p_nElement.eElem;
         final Node<E> nNext = p_nElement.nNext;
@@ -532,8 +539,8 @@ public class MyLinkedList<E> implements List<E> {
             for (Node<E> nElem = nHead; nElem != null; nElem = nElem.nNext) {
                 // If the null element was found
                 if (nElem.eElem == null) {
-                    // Remove the element by cancelling its bindings
-                    cancelBindings(nElem);
+                    // Remove the element by quitting all associations
+                    quitAssociations(nElem);
                     // Return true as the element was removed
                     return true;
                 }
@@ -545,8 +552,8 @@ public class MyLinkedList<E> implements List<E> {
             for (Node<E> nElem = nHead; nElem != null; nElem = nElem.nNext) {
                 // If given object equals current element of linked list
                 if (o.equals(nElem)) {
-                    // Remove the element by cancelling its bindings
-                    cancelBindings(nElem);
+                    // Remove the element by  quitting all associations
+                    quitAssociations(nElem);
                     // Return true as the element was removed
                     return true;
                 }
@@ -742,7 +749,20 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public E set(int index, E element) {
-        throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
+        // Check if the given index equals an index of an existing element
+        checkElementIndex(index);
+
+        // Get the node which should be updated
+        Node<E> nNodeToUpdate = getNode(index);
+
+        // Store the old content of the node
+        E eOldElem = nNodeToUpdate.eElem;
+
+        // Set the new content of the node
+        nNodeToUpdate.eElem = element;
+
+        // Return the old content of the node
+        return eOldElem;
     }
 
     /**
@@ -794,8 +814,8 @@ public class MyLinkedList<E> implements List<E> {
     public E remove(int index) {
         // Check if the given index equals an index of an existing element
         checkElementIndex(index);
-        // Get the node with the given index and remove it by cancelling its bindings
-        return cancelBindings(getNode(index));
+        // Get the node with the given index and remove it by quitting all associations
+        return quitAssociations(getNode(index));
     }
 
     /**
@@ -936,7 +956,6 @@ public class MyLinkedList<E> implements List<E> {
         return new MyListItr(index);
     }
 
-    // TODO: Implement me
     /**
      * Returns a view of the portion of this list between the specified
      * {@code fromIndex}, inclusive, and {@code toIndex}, exclusive.  (If
@@ -973,7 +992,7 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public List<E> subList(int fromIndex, int toIndex) {
-        return null;
+        throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
     /**
