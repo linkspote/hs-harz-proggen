@@ -22,6 +22,7 @@ public class Main {
         lstr.add("Hallo");
         lstr.add("du");
         lstr.add("da");
+        lstr.containsAll(lstr);
 
         lstr.subList(0, 2);
         Iterator itr = lstr.iterator();

@@ -557,7 +557,6 @@ public class MyLinkedList<E> implements List<E> {
         return false;
     }
 
-    // TODO: implement me
     /**
      * Returns {@code true} if this list contains all of the elements of the
      * specified collection.
@@ -578,7 +577,15 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public boolean containsAll(Collection<?> c) {
-        return false;
+        // Loop through each object of the given collection
+        for (Object o : c) {
+            // If given collection doesn't contain the object return false
+            if (!contains(o))
+                return false;
+        }
+
+        // Returns only true when all objects of the collection are part of the linked list
+        return true;
     }
 
     /**
@@ -699,7 +706,6 @@ public class MyLinkedList<E> implements List<E> {
         throw new UnsupportedOperationException(UNSUPPORTED_OPERATION);
     }
 
-    // TODO: implement me
     /**
      * Returns the element at the specified position in this list.
      *
@@ -710,7 +716,10 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public E get(int index) {
-        return null;
+        // Checks if given index is index of an existing element
+        checkElementIndex(index);
+        // Get node at given index and return its content
+        return getNode(index).eElem;
     }
 
     /**
@@ -768,7 +777,6 @@ public class MyLinkedList<E> implements List<E> {
             addBefore(element, getNode(index));
     }
 
-    // TODO: Implement me
     /**
      * Removes the element at the specified position in this list (optional
      * operation).  Shifts any subsequent elements to the left (subtracts one
@@ -784,7 +792,10 @@ public class MyLinkedList<E> implements List<E> {
      */
     @Override
     public E remove(int index) {
-        return null;
+        // Check if the given index equals an index of an existing element
+        checkElementIndex(index);
+        // Get the node with the given index and remove it by cancelling its bindings
+        return cancelBindings(getNode(index));
     }
 
     /**
@@ -1005,13 +1016,26 @@ public class MyLinkedList<E> implements List<E> {
 
     /**
      * Checks if the given index is in bounds of the linked lists size.
+     * Used for add operations and the iterator.
      *
-     * @param index Represents the index to check.
+     * @param p_iIndex                   Represents the index to check.
      * @throws IndexOutOfBoundsException if the index is out of range
      *                                   ({@code index < 0 || index > size()})
      */
-    private void checkPositionIndex(int index) {
-        if (!(index >= 0 && index <= iSize))
-            throw new IndexOutOfBoundsException(index);
+    private void checkPositionIndex(int p_iIndex) {
+        if (!(p_iIndex >= 0 && p_iIndex <= iSize))
+            throw new IndexOutOfBoundsException(p_iIndex);
+    }
+
+    /**
+     * Checks if the given index is a real element index.
+     *
+     * @param p_iIndex                   Represents the index to check.
+     * @throws IndexOutOfBoundsException if the index is out of range
+     *                                   ({@code index < 0 || index >= size()})
+     */
+    private void checkElementIndex (int p_iIndex) {
+        if (!(p_iIndex >= 0 && p_iIndex < iSize))
+            throw new IndexOutOfBoundsException(p_iIndex);
     }
 }
