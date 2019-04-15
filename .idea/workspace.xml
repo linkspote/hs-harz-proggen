@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46461b0d-06f3-4486-941f-d59b018a1209" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hs-harz-proggen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hs-harz-proggen.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,20 +23,13 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="2080">
               <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,17 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="520" column="41" selection-start-line="520" selection-start-column="41" selection-end-line="520" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ListIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+            <state relative-caret-position="31">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -149,8 +129,8 @@
         <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/sets/SetsTest.java" />
         <option value="$PROJECT_DIR$/.idea/hs-harz-proggen.iml" />
         <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java" />
-        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java" />
       </list>
     </option>
@@ -490,16 +470,17 @@
       <option name="project" value="LOCAL" />
       <updated>1555336040528</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[Feature] Code Cleanup&#10;[Feature] Add Unit tests for MyLinkedList&#10;[Fix] remove(Object) method wasn't able to find non-null objects">
+      <created>1555346964209</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1555346964209</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 15m 45s.xml">
-      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 19m 34s.xml">
-      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 24m 46s.xml">
       <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
@@ -524,9 +505,15 @@
     <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 39m 04s.xml">
       <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 44m 02s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLinkedListTest - 2019.04.15 at 18h 45m 43s.xml">
+      <configuration name="MyLinkedListTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100887000" />
+    <option name="totallyTimeSpent" value="101243000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,10 +526,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496208" visible="true" weight="0.20255864" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.503792" side_tool="true" visible="true" weight="0.20255864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49517685" visible="true" weight="0.20255864" />
+      <window_info id="Structure" order="1" sideWeight="0.50482315" side_tool="true" visible="true" weight="0.20255864" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -550,7 +536,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5016251" side_tool="true" weight="0.19829424" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3261105" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -624,7 +610,8 @@
     <MESSAGE value="[Feature] Put some testing into main for understanding&#10;[Feature] Reworked MyLinkedList class to just implement the List interface&#10;[Feature] Added MyLinkedList_ which equals the old version of MyLinkedList which implements the List and Deque interfaces (will be removed later on)" />
     <MESSAGE value="[Feature] Put some more testing into main for understanding&#10;[Feature] Implemented ListIterator and added constant for unsupported operation message string" />
     <MESSAGE value="[Feature] Implemented set(int, E) for MyLinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Feature] Implemented set(int, E) for MyLinkedList" />
+    <MESSAGE value="[Feature] Code Cleanup&#10;[Feature] Add Unit tests for MyLinkedList&#10;[Fix] remove(Object) method wasn't able to find non-null objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feature] Code Cleanup&#10;[Feature] Add Unit tests for MyLinkedList&#10;[Fix] remove(Object) method wasn't able to find non-null objects" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -839,16 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -884,9 +861,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="2080">
           <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -923,8 +903,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="520" column="41" selection-start-line="520" selection-start-column="41" selection-end-line="520" selection-end-column="41" />
+        <state relative-caret-position="31">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>

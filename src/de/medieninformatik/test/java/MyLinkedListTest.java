@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
 
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.ListIterator;
 
 import static org.junit.jupiter.api.Assertions.*;
