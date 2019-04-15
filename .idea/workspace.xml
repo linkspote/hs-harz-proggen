@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46461b0d-06f3-4486-941f-d59b018a1209" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hs-harz-proggen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hs-harz-proggen.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyIterator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="254">
+              <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,80 +38,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractList.java">
+        <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7684">
-              <caret line="497" selection-start-line="497" selection-end-line="499" selection-end-column="57" />
+            <state relative-caret-position="291">
+              <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
               <folding>
-                <element signature="e#9843#9844#0" expanded="true" />
-                <element signature="e#9875#9876#0" expanded="true" />
-                <element signature="e#10079#10080#0" expanded="true" />
-                <element signature="e#10117#10118#0" expanded="true" />
-                <element signature="e#13234#13235#0" expanded="true" />
-                <element signature="e#13272#13273#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractSequentialList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3621">
-              <caret line="237" column="23" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
-              <folding>
-                <element signature="e#8746#8747#0" expanded="true" />
-                <element signature="e#8783#8784#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/LinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="358" column="19" selection-start-line="358" selection-start-column="19" selection-end-line="358" selection-end-column="19" />
-              <folding>
-                <element signature="e#15785#15786#0" expanded="true" />
-                <element signature="e#15834#15835#0" expanded="true" />
-                <element signature="e#16006#16007#0" expanded="true" />
-                <element signature="e#16056#16057#0" expanded="true" />
-                <element signature="e#20313#20314#0" expanded="true" />
-                <element signature="e#20349#20350#0" expanded="true" />
-                <element signature="e#26585#26586#0" expanded="true" />
-                <element signature="e#26632#26633#0" expanded="true" />
-                <element signature="e#29271#29272#0" expanded="true" />
-                <element signature="e#29318#29319#0" expanded="true" />
-                <element signature="e#29631#29632#0" expanded="true" />
-                <element signature="e#29676#29677#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2660#2661#0" expanded="true" />
+                <element signature="e#2709#2710#0" expanded="true" />
+                <element signature="e#4214#4215#0" expanded="true" />
+                <element signature="e#4259#4260#0" expanded="true" />
+                <element signature="e#5823#5824#0" expanded="true" />
+                <element signature="e#5864#5865#0" expanded="true" />
+                <element signature="e#7372#7373#0" expanded="true" />
+                <element signature="e#7458#7459#0" expanded="true" />
+                <element signature="e#13790#13791#0" expanded="true" />
+                <element signature="e#13818#13819#0" expanded="true" />
+                <element signature="e#14012#14013#0" expanded="true" />
+                <element signature="e#14045#14046#0" expanded="true" />
+                <element signature="e#14985#14986#0" expanded="true" />
+                <element signature="e#15023#15024#0" expanded="true" />
+                <element signature="e#15252#15253#0" expanded="true" />
+                <element signature="e#15289#15290#0" expanded="true" />
+                <element signature="e#18496#18526#0" expanded="true" />
+                <element signature="e#26282#26283#0" expanded="true" />
+                <element signature="e#26360#26361#0" expanded="true" />
+                <element signature="e#29646#29647#0" expanded="true" />
+                <element signature="e#29724#29725#0" expanded="true" />
+                <element signature="e#31082#31083#0" expanded="true" />
+                <element signature="e#31160#31161#0" expanded="true" />
+                <element signature="e#31502#31503#0" expanded="true" />
+                <element signature="e#31580#31581#0" expanded="true" />
+                <element signature="e#40894#40895#0" expanded="true" />
+                <element signature="e#40932#40933#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-173">
-              <caret line="522" column="65" selection-start-line="522" selection-start-column="65" selection-end-line="522" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#13818#13819#0" expanded="true" />
-                <element signature="e#14045#14046#0" expanded="true" />
-                <element signature="e#15023#15024#0" expanded="true" />
-                <element signature="e#15289#15290#0" expanded="true" />
-                <element signature="e#24488#24489#0" expanded="true" />
-                <element signature="e#26072#26073#0" expanded="true" />
-                <element signature="e#29436#29437#0" expanded="true" />
-                <element signature="e#30872#30873#0" expanded="true" />
-                <element signature="e#31292#31293#0" expanded="true" />
-                <element signature="e#31747#31748#0" expanded="true" />
-                <element signature="e#33032#33033#0" expanded="true" />
-                <element signature="e#35536#35537#0" expanded="true" />
-                <element signature="e#40302#40303#0" expanded="true" />
-                <element signature="e#43480#43481#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="733">
+              <caret line="520" column="41" selection-start-line="520" selection-start-column="41" selection-end-line="520" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -114,20 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ListIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2516">
-              <caret line="171" column="9" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2006">
-              <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
-              <folding>
-                <element signature="e#3096#3097#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="199">
+              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -152,7 +114,9 @@
       <find>TODO:</find>
       <find>linkLast</find>
       <find>linkBefore</find>
+      <find>checkElement</find>
       <find>TODO</find>
+      <find>bindings</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,6 +151,7 @@
         <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java" />
         <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java" />
       </list>
     </option>
   </component>
@@ -246,6 +211,23 @@
               <item name="de" type="462c0819:PsiDirectoryNode" />
               <item name="medieninformatik" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hs-harz-proggen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="medieninformatik" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hs-harz-proggen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hs-harz-proggen" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="medieninformatik" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -321,13 +303,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
       <recent name="sets" />
       <recent name="geometry" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -346,7 +329,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MyLinkedListTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="hs-harz-proggen" />
@@ -354,9 +337,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+    <configuration name="MyLinkedListTest" type="JUnit" factoryName="JUnit">
+      <module name="hs-harz-proggen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyLinkedListTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLinkedListTest.indexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hs-harz-proggen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyLinkedListTest" />
+      <option name="METHOD_NAME" value="indexOf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLinkedListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hs-harz-proggen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyLinkedListTest" />
+      <option name="METHOD_NAME" value="lastIndexOf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLinkedListTest.listIterator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hs-harz-proggen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyLinkedListTest" />
+      <option name="METHOD_NAME" value="listIterator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLinkedListTest.listIterator1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hs-harz-proggen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyLinkedListTest" />
+      <option name="METHOD_NAME" value="listIterator1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLinkedListTest.subList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hs-harz-proggen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyLinkedListTest" />
+      <option name="METHOD_NAME" value="subList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.MyLinkedListTest" />
+      <item itemvalue="JUnit.MyLinkedListTest.indexOf" />
+      <item itemvalue="JUnit.MyLinkedListTest.lastIndexOf" />
+      <item itemvalue="JUnit.MyLinkedListTest.subList" />
+      <item itemvalue="JUnit.MyLinkedListTest.listIterator" />
+      <item itemvalue="JUnit.MyLinkedListTest.listIterator1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyLinkedListTest.listIterator1" />
+        <item itemvalue="JUnit.MyLinkedListTest.listIterator" />
+        <item itemvalue="JUnit.MyLinkedListTest.subList" />
+        <item itemvalue="JUnit.MyLinkedListTest.lastIndexOf" />
+        <item itemvalue="JUnit.MyLinkedListTest.indexOf" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -424,43 +483,50 @@
       <option name="project" value="LOCAL" />
       <updated>1555268541754</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Feature] Implemented set(int, E) for MyLinkedList">
+      <created>1555336040528</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555336040528</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 30m 13s.xml">
-      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 15m 45s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 30m 26s.xml">
-      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 19m 34s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 33m 29s.xml">
-      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 24m 46s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 33m 57s.xml">
-      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 26m 51s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetsTest_getIntersection - 2019.04.01 at 19h 34m 07s.xml">
-      <configuration name="SetsTest.getIntersection" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 28m 35s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetsTest_getUnion - 2019.04.01 at 19h 36m 59s.xml">
-      <configuration name="SetsTest.getUnion" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 30m 14s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CuboidTest - 2019.04.01 at 20h 07m 40s.xml">
-      <configuration name="CuboidTest" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 31m 46s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SphereTest - 2019.04.01 at 20h 07m 49s.xml">
-      <configuration name="SphereTest" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 37m 05s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetListTest - 2019.04.01 at 20h 08m 01s.xml">
-      <configuration name="SetListTest" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 38m 25s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetsTest - 2019.04.01 at 20h 08m 15s.xml">
-      <configuration name="SetsTest" configurationId="JUnit" />
+    <history-entry file="MyLinkedListTest_listIterator1 - 2019.04.15 at 18h 39m 04s.xml">
+      <configuration name="MyLinkedListTest.listIterator1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89343000" />
+    <option name="totallyTimeSpent" value="100887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,9 +539,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49434572" visible="true" weight="0.20469083" />
-      <window_info id="Structure" order="1" sideWeight="0.5056543" side_tool="true" visible="true" weight="0.20469083" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496208" visible="true" weight="0.20255864" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.503792" side_tool="true" visible="true" weight="0.20255864" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -556,7 +623,8 @@
     <MESSAGE value="[Feature] Restore original master branch&#10;[Feature] Moved linked list to branch linkedList_09042019" />
     <MESSAGE value="[Feature] Put some testing into main for understanding&#10;[Feature] Reworked MyLinkedList class to just implement the List interface&#10;[Feature] Added MyLinkedList_ which equals the old version of MyLinkedList which implements the List and Deque interfaces (will be removed later on)" />
     <MESSAGE value="[Feature] Put some more testing into main for understanding&#10;[Feature] Implemented ListIterator and added constant for unsupported operation message string" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Feature] Put some more testing into main for understanding&#10;[Feature] Implemented ListIterator and added constant for unsupported operation message string" />
+    <MESSAGE value="[Feature] Implemented set(int, E) for MyLinkedList" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feature] Implemented set(int, E) for MyLinkedList" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -721,19 +789,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7684">
+        <state relative-caret-position="7232">
           <caret line="497" selection-start-line="497" selection-end-line="499" selection-end-column="57" />
           <folding>
             <element signature="e#9843#9844#0" expanded="true" />
@@ -748,7 +806,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/AbstractSequentialList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
+        <state relative-caret-position="3408">
           <caret line="237" column="23" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
           <folding>
             <element signature="e#8746#8747#0" expanded="true" />
@@ -757,16 +815,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ListIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="171" column="9" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList_.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
+        <state relative-caret-position="-1460">
           <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
           <folding>
             <element signature="e#3096#3097#0" expanded="true" />
@@ -774,10 +825,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0-M1/junit-jupiter-api-5.5.0-M1.jar!/org/junit/jupiter/api/function/Executable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="112" column="133" selection-start-line="112" selection-start-column="133" selection-end-line="112" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="358" column="19" selection-start-line="358" selection-start-column="19" selection-end-line="358" selection-end-column="19" />
+        <state relative-caret-position="95">
+          <caret line="898" selection-start-line="898" selection-end-line="898" />
           <folding>
             <element signature="e#15785#15786#0" expanded="true" />
             <element signature="e#15834#15835#0" expanded="true" />
@@ -797,25 +886,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/main/java/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="522" column="65" selection-start-line="522" selection-start-column="65" selection-end-line="522" selection-end-column="65" />
+        <state relative-caret-position="291">
+          <caret line="130" column="17" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2660#2661#0" expanded="true" />
+            <element signature="e#2709#2710#0" expanded="true" />
+            <element signature="e#4214#4215#0" expanded="true" />
+            <element signature="e#4259#4260#0" expanded="true" />
+            <element signature="e#5823#5824#0" expanded="true" />
+            <element signature="e#5864#5865#0" expanded="true" />
+            <element signature="e#7372#7373#0" expanded="true" />
+            <element signature="e#7458#7459#0" expanded="true" />
+            <element signature="e#13790#13791#0" expanded="true" />
             <element signature="e#13818#13819#0" expanded="true" />
+            <element signature="e#14012#14013#0" expanded="true" />
             <element signature="e#14045#14046#0" expanded="true" />
+            <element signature="e#14985#14986#0" expanded="true" />
             <element signature="e#15023#15024#0" expanded="true" />
+            <element signature="e#15252#15253#0" expanded="true" />
             <element signature="e#15289#15290#0" expanded="true" />
-            <element signature="e#24488#24489#0" expanded="true" />
-            <element signature="e#26072#26073#0" expanded="true" />
-            <element signature="e#29436#29437#0" expanded="true" />
-            <element signature="e#30872#30873#0" expanded="true" />
-            <element signature="e#31292#31293#0" expanded="true" />
-            <element signature="e#31747#31748#0" expanded="true" />
-            <element signature="e#33032#33033#0" expanded="true" />
-            <element signature="e#35536#35537#0" expanded="true" />
-            <element signature="e#40302#40303#0" expanded="true" />
-            <element signature="e#43480#43481#0" expanded="true" />
+            <element signature="e#18496#18526#0" expanded="true" />
+            <element signature="e#26282#26283#0" expanded="true" />
+            <element signature="e#26360#26361#0" expanded="true" />
+            <element signature="e#29646#29647#0" expanded="true" />
+            <element signature="e#29724#29725#0" expanded="true" />
+            <element signature="e#31082#31083#0" expanded="true" />
+            <element signature="e#31160#31161#0" expanded="true" />
+            <element signature="e#31502#31503#0" expanded="true" />
+            <element signature="e#31580#31581#0" expanded="true" />
+            <element signature="e#40894#40895#0" expanded="true" />
+            <element signature="e#40932#40933#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/medieninformatik/test/java/MyLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="520" column="41" selection-start-line="520" selection-start-column="41" selection-end-line="520" selection-end-column="41" />
         </state>
       </provider>
     </entry>

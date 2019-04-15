@@ -4,6 +4,9 @@ import java.util.*;
 /**
  * Doubly-linked list implementation of the {@code List} interface.
  *
+ * @author Kai Gutsmann (m26667)
+ * @author Kevin Kleiber (m26675)
+ * @version 1.0
  * @param <E> the type of elements held in this collection
  */
 public class MyLinkedList<E> implements List<E> {
@@ -551,7 +554,7 @@ public class MyLinkedList<E> implements List<E> {
             // Loop through the linked lists elements from head to tail
             for (Node<E> nElem = nHead; nElem != null; nElem = nElem.nNext) {
                 // If given object equals current element of linked list
-                if (o.equals(nElem)) {
+                if (o.equals(nElem.eElem)) {
                     // Remove the element by  quitting all associations
                     quitAssociations(nElem);
                     // Return true as the element was removed
