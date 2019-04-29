@@ -4,8 +4,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
-// TODO: 25.04.2019 - Adjust existing comments and add some where necessary
-// TODO: 25.04.2019 - Don*t forget to add some output by printing the nodes of the final map 
 /**
  * The {@code Main} class contains the main() method which represents the main execution point of each program.
  *
@@ -17,11 +15,14 @@ import java.util.*;
  */
 public class Main {
     /**
-     * This method is the main execution point of each program.
+     * This method is the main execution point of each program. Used to create a HashMap with characters from an example
+     * file and their occurrence. This information is then used to generate a tree structure and calculate the Huffman
+     * encoding for each respective character.
      *
      * @param args Represents a String array which contains parameters to configure the program execution.
      */
     public static void main (String[] args) {
+        // Declare List for all Lines contained by the text file
         List<String> lsLines = null;
         try {
             // read file contents into a List of Strings
@@ -61,12 +62,12 @@ public class Main {
             Node nOne = pqNode.poll();
             Node nTwo = pqNode.poll();
             // Offer new parent Node containing previous Elements as child Nodes
-            pqNode.offer(new Node(nOne, nTwo, null, nOne.getOccurrence()+nTwo.getOccurrence()));
+            pqNode.offer(new Node(nOne, nTwo, nOne.getOccurrence()+nTwo.getOccurrence()));
         }
         // HashMap containing every character with its respective encoding
         HashMap<Character, String> mEncoding = new HashMap<>();
         calcEncoding(pqNode.poll(), "", mEncoding);
-        // print out the encoding table
+        // Print out the encoding table
         System.out.println(mEncoding);
     }
 

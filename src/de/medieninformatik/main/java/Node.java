@@ -1,14 +1,12 @@
-// TODO: 25.04.2019 - Add comments to everything
-
 /**
- * This Class is used to create <code>Node</code> Elements, which are then used to build a tree data structure.
+ * This Class is used to create <code>Node</code> Elements that holds a character and an counter for its occurrence,
+ * which are then used to build a tree data structure.
  */
 public class Node {
-    // two separate sub nodes
+    // Two separate sub nodes
     private Node nLeft, nRight;
     // Integer containing number of occurrence
     private int iOccurrence;
-    // private char cChar
     // Content Node of given Node object
     private ContentNode cnContent;
 
@@ -16,23 +14,40 @@ public class Node {
      * This class provides a content Node, which stores a character.
      */
     private class ContentNode {
+        // character that is stored by ContentNode class
         private char cChar;
+
+        /**
+         * Constructor of <code>ContentNode</code> class. Allows to initialise the character that is stored.
+         * @param p_cChar character to initialise
+         */
         public ContentNode (char p_cChar) {
             cChar = p_cChar;
         }
     }
 
-    public Node (Node p_nLeft, Node p_nRight, ContentNode p_cnContent, int p_iOccurrence) {
+    /**
+     * Contructor of class <code>Node</code>. Allows to assign left and right child Nodes and set a occurrence value.
+     * @param p_nLeft left child Node
+     * @param p_nRight right child Node
+     * @param p_iOccurrence occurrence counter as Integer
+     */
+    public Node (Node p_nLeft, Node p_nRight, int p_iOccurrence) {
         nLeft = p_nLeft;
         nRight = p_nRight;
-        cnContent = p_cnContent;
         iOccurrence = p_iOccurrence;
     }
 
+    /**
+     * Secodary Contructor of class <code>Node</code>. Allows to assign left and right child Nodes and set a occurrence
+     * value, as well as a character that will be stored in the content Node.
+     * @param p_nLeft left child Node
+     * @param p_nRight right child Node
+     * @param p_iOccurrence occurrence counter as Integer
+     * @param p_cChar char to be stored in the content Node
+     */
     public Node (Node p_nLeft, Node p_nRight, int p_iOccurrence, char p_cChar) {
-        nLeft = p_nLeft;
-        nRight = p_nRight;
-        iOccurrence = p_iOccurrence;
+        this(p_nLeft, p_nRight, p_iOccurrence);
         cnContent = new ContentNode(p_cChar);
     }
 
