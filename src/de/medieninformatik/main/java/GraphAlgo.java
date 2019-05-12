@@ -13,18 +13,19 @@ public class GraphAlgo {
      * @return
      */
     public static Graph kruskal(Graph g) {
+        // Create HashMap with vertex and a corresponding trivial Tree
         HashMap<Vertex, Graph> trees = new HashMap<>(g.numberOfVertices());
         g.getVertices().forEach((vertex) -> trees.put(vertex, new Graph(vertex)));
-
+        // Store all edges in a Queue according to their weight
         PriorityQueue<Edge> edges = new PriorityQueue<Edge>(Comparator.comparing(Edge::getWeight));
         edges.addAll(g.getEdges());
-
-
+        //
         do {
+            // Get start and end Vertex from an Edge in the Queue
             Edge edge = edges.poll();
             Vertex startVertex = edge.getStartVertex();
             Vertex endVertex = edge.getEndVertex();
-
+            // Get Tree with start Vertex
             Graph treeStartVertex = trees.get(startVertex);
 
             if (!treeStartVertex.contains(endVertex)) {

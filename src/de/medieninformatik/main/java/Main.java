@@ -11,7 +11,8 @@ import javafx.application.Application;
  */
 public class Main {
     /**
-     * This method is the main execution point of each program.
+     * This method is the main execution point of each program. It is used to launch an Application using the
+     * <code>KruskalApp</code> class.
      *
      * @param args Represents a String array which contains parameters to configure the program execution.
      */

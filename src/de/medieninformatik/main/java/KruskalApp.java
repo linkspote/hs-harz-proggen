@@ -14,14 +14,15 @@ import java.util.Set;
 import java.util.function.Consumer;
 
 /**
- *
+ *  The <code>KruskalApp</code> class is used to create a <code>Graph</code> from a given file as well as a according
+ *  minimal spanning tree calculated with the Kruskal Algorithm.
  */
 public class KruskalApp extends Application {
     private Graph g;
     private Graph minSpanTree;
 
     /**
-     *
+     * Constructor of <code>KruskalApp</code> class. Initializes two separate instances of the <code>Graph</code> class.
      */
     public KruskalApp() {
         g = new Graph();
@@ -29,7 +30,7 @@ public class KruskalApp extends Application {
     }
 
     /**
-     *
+     * Initializes application prior to the actual start.
      */
     @Override
     public void init() {
@@ -38,8 +39,8 @@ public class KruskalApp extends Application {
     }
 
     /**
-     *
-     * @param primaryStage
+     *  This method is used to draw the Vertices and Edges of a <code>Graph</code> onto a <code>Canvas</code>.
+     * @param primaryStage Primary stage for the application, onto which the scene is set
      */
     @Override
     public void start(Stage primaryStage) {
@@ -94,8 +95,9 @@ public class KruskalApp extends Application {
     }
 
     /**
-     *
-     * @param fname
+     *  Creates a intial <code>Graph</code> from data given by a file. It also creates a minimal spanning tree based on
+     *  that graph using the Kruskal Algorithm in the <code>GraphAlgo</code> class.
+     * @param fname Path of file which contains the data for creating a <code>Graph</code>
      */
     private void model(String fname) {
         Path path = Paths.get(fname);
