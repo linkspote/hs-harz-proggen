@@ -56,7 +56,7 @@ public class Vertex implements Comparable<Vertex> { // Vertices sind nach Id geo
      * returned.
      *
      * @param o Represents another {@code Vertex} which shall or not shall equal the current one.
-     * @return Returns true when the ids or objects are equal, otherwise false will be returned.
+     * @return True when the ids or objects are equal, otherwise false.
      */
     @Override
     public final boolean equals(Object o) {
