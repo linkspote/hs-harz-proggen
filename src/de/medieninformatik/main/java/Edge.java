@@ -2,7 +2,7 @@ import java.util.Objects;
 
 /**
  * The {@code Edge} class is used to create the edges for the Kruskal algorithm which connect two vertices of the
- * {@code Vertex} class. In the GUI windows they are displayed as black or red strokes and are titled with their weight.
+ * {@code Vertex} class. In the GUI window they are displayed as black or red strokes and are titled with their weight.
  */
 public class Edge {
     // Declare class attributes
