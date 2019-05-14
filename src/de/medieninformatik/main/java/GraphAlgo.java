@@ -37,6 +37,7 @@ public class GraphAlgo {
             // Get tree with start vertex
             Graph treeStartVertex = trees.get(startVertex);
 
+            // Check is end vertex is not part of start vertex tree
             if (!treeStartVertex.contains(endVertex)) {
                 // Get tree containing end vertex
                 Graph treeEndVertex = trees.get(endVertex);
