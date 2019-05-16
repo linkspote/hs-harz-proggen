@@ -1,3 +1,5 @@
+package de.medieninformatik.oop;
+
 /**
  * The {@code Main} class contains the main() method which represents the main execution point of each program.
  *

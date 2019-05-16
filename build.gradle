@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+group 'de.medieninformatik.oop'
+version '1.0'
+
+sourceCompatibility = 12
+targetCompatibility = 12
+
+// Only works when root directory is a class of the package stored in group
+// mainClassName = group + '.' + rootDir.name
+mainClassName = group + '.' + "Main"
+
+repositories {
+    jcenter()
+}
+
+javafx{
+    version = '12.0.1'
+    modules = ['javafx.controls', 'javafx.fxml' ]
+}
+
+dependencies {
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.4.2")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.4.2")
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "started", "passed", "skipped", "failed"
+    }
+}
+
+tasks.withType(Test) {
+    doLast {
+        File file = file("$buildDir/reports/tests/test/index.html")
+        java.awt.Desktop.desktop.browse file.toURI()
+    }
+}
+
+wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+    setGradleVersion("5.4")
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
+
+
