@@ -56,6 +56,17 @@ public class GraphAlgo {
         return (Graph) trees.values().stream().limit(1).toArray()[0];
     }
 
+    /**
+     * This method is used to apply the Dijkstra algorithm to a given {@code Graph} and start {@Code Vertex}. It gets
+     * the Edges of a current {@Code Vertex} with least cost and checks if there is a cost efficient path to every
+     * neighbor {@Code Vertex}. If that is the case, the {@Code Edge} will be added to the new Dijkstra graph. If there
+     * is a more effective path with less cost to a neighboring {@Code Vertex}, the previously set and now redundant
+     * {@Code Edge} is removed, before adding the new {@Code Edge}. This process is repeated, until every
+     * {@Code Vertex} is attended to.
+     * @param g Initial graph
+     * @param startVertex Initial Vertex
+     * @return New Graph according to Dijkstra algorithm
+     */
     public static Graph dijkstra(Graph g, Vertex startVertex) {
         // set containing all vertices of the graph
         HashSet<Vertex> vertices = new HashSet<>(g.numberOfVertices());
@@ -68,11 +79,12 @@ public class GraphAlgo {
 
         // as long as there are still unburned vertices left
         while(g.hasUnburnedVertices()) {
-            // makiere den Vertex als verbrannt
+            // mark vertex
             currentVertex.setBurned(true);
-            // hole des Kanten des Vertex
+            // get all edges of current vertex, store in list
             ArrayList<Edge> vertexEdges = new ArrayList<>();
             for (Edge edge: g.getEdges()) {
+                // if an edge contains the current vertex, add the edge to the list
                 if(edge.contains(currentVertex)) {
                     vertexEdges.add(edge);
                 }
@@ -91,6 +103,7 @@ public class GraphAlgo {
                     neighborVertex.setCost(currentVertex.getCost()+edge.getWeight());
                     // remove previoulsy added edges, if necessary
                     for (Edge newEdge: g.getEdges()) {
+                        // check if there is an edge that is already connected to this vertex
                         if(newEdge.contains(neighborVertex)) {
                             newEdges.remove(newEdge);
                         }
@@ -100,7 +113,7 @@ public class GraphAlgo {
             }
 
             // search for the next vertex
-            double smallestCost = 999;
+            double smallestCost = Double.POSITIVE_INFINITY;
             for (Vertex v: vertices) {
                 // if the vertex is not burned and has lowest cost, select it as next vertex
                 if(!v.getBurned() && (v.getCost() < smallestCost) && (Double.compare(v.getCost(), 0) != 0)) {

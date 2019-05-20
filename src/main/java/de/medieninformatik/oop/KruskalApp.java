@@ -170,7 +170,6 @@ public class KruskalApp extends Application {
                 }
 
                 System.out.println("Done");
-                System.out.println(firstVertex.getVertexId());
             }
             catch(Exception e) {
                 System.err.println(e.getMessage());
