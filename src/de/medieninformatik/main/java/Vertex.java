@@ -9,6 +9,8 @@ public class Vertex implements Comparable<Vertex> { // Vertices sind nach Id geo
     private final int vertexId;
     private final int x; // Koordinaten nur zum Zeichnen, für Algorithmen nicht relevant
     private final int y; // gehen daher auch nicht in equals und hashCode ein.
+    private double cost;
+    private boolean burned;
 
     /**
      * Constructs a {@code Vertex} with the given attribute values for its id as well as the x and y position.
@@ -22,6 +24,9 @@ public class Vertex implements Comparable<Vertex> { // Vertices sind nach Id geo
         this.vertexId = id;
         this.x = x;
         this.y = y;
+
+        this.burned = false;
+        this.cost = 0;
     }
 
     /**
@@ -91,5 +96,21 @@ public class Vertex implements Comparable<Vertex> { // Vertices sind nach Id geo
     @Override
     public int compareTo(Vertex o) {
         return this.vertexId - o.vertexId;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    public boolean getBurned() {
+        return burned;
+    }
+
+    public void setBurned(boolean burned) {
+        this.burned = burned;
     }
 }

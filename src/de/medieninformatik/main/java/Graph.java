@@ -60,6 +60,19 @@ public class Graph {
     }
 
     /**
+     * This method is used to check if the Graph still contains unburned Vertices.
+     * @return true, if there are unburned Vertices
+     */
+    public boolean hasUnburnedVertices() {
+        for (Vertex v: vertices) {
+            if(!v.getBurned()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * Checks whether the current {@code Graph} contains the given {@code Vertex} and returns true if that's the case.
      *
      * @param v Represents the {@code Vertex} to be checked.

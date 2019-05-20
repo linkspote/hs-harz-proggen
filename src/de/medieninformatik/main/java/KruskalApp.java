@@ -106,8 +106,17 @@ public class KruskalApp extends Application {
             try {
                 List<String> lines = Files.readAllLines(path);
                 g = Graph.read(lines);
-                minSpanTree = GraphAlgo.kruskal(g);
+
+                Vertex firstVertex = null;
+                for (Vertex v: g.getVertices()) {
+                    if(v.getVertexId() == 0) {
+                        firstVertex = v;
+                        break;
+                    }
+                }
+                minSpanTree = GraphAlgo.dijkstra(g, firstVertex);
                 System.out.println("Done");
+                System.out.println(firstVertex.getVertexId());
             }
             catch(Exception e) {
                 System.err.println(e.getMessage());

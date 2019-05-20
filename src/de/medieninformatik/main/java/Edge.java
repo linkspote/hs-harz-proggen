@@ -81,6 +81,25 @@ public class Edge {
     }
 
     /**
+     * This method is used to check if an {@code Vertex} is contained by this instance of {@code Edge}.
+     * @param v Vertex that is checked
+     * @return true, if Edge contains Vertex
+     */
+    public boolean contains(Vertex v) {
+        return (this.startVertex.equals(v) || this.endVertex.equals(v));
+    }
+
+    public Vertex getOtherVertex(Vertex currentVertex) {
+        Vertex otherVertex = null;
+        if(currentVertex.equals(startVertex)) {
+            otherVertex = endVertex;
+        } else if(currentVertex.equals(endVertex)) {
+            otherVertex = startVertex;
+        }
+        return otherVertex;
+    }
+
+    /**
      * Generates a hash code for the current {@code Edge} based on all three class attributes and returns it.
      *
      * @return The hash code of the current {@code Edge} as integer value.

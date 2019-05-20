@@ -1,6 +1,5 @@
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.PriorityQueue;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  *  The <code>GraphAlgo</code> class only contains one method which is used to apply the Kruskal Algorithm to a given
@@ -48,11 +47,68 @@ public class GraphAlgo {
                 treeStartVertex.getEdges().add(edge);
                 // Update hash map with new graphs for each vertex of the end tree
                 treeEndVertex.getVertices().forEach((vertex) -> trees.replace(vertex, treeStartVertex));
-                // TODO:  Kleineren Wald nutzen
             }
         }
         while (!edges.isEmpty());
         // return the new graph build with the Kruskal algorithm
         return (Graph) trees.values().stream().limit(1).toArray()[0];
+    }
+
+    public static Graph dijkstra(Graph g, Vertex startVertex) {
+        // set containing all vertices of the graph
+        HashSet<Vertex> vertices = new HashSet<>(g.numberOfVertices());
+        vertices.addAll(g.getVertices());
+        // this set will be used to add all new edges
+        HashSet<Edge> newEdges = new HashSet<>();
+
+        // initialise currentVertex with startVertex
+        Vertex currentVertex = startVertex;
+
+        // as long as there are still unburned vertices left
+        while(g.hasUnburnedVertices()) {
+            // makiere den Vertex als verbrannt
+            currentVertex.setBurned(true);
+            // hole des Kanten des Vertex
+            ArrayList<Edge> vertexEdges = new ArrayList<>();
+            for (Edge edge: g.getEdges()) {
+                if(edge.contains(currentVertex)) {
+                    vertexEdges.add(edge);
+                }
+            }
+
+            // for every edge connected to the current vertex
+            for (Edge edge: vertexEdges) {
+                // go to the neighbor vertex
+                Vertex neighborVertex = edge.getOtherVertex(currentVertex);
+                // add an edge, if it does not have costs yet
+                if(neighborVertex.getCost() == 0) {
+                    neighborVertex.setCost(currentVertex.getCost()+edge.getWeight());
+                    newEdges.add(edge);
+                // add a new edge, if this edge is more cost efficient
+                } else if(neighborVertex.getCost() > currentVertex.getCost()+edge.getWeight()) {
+                    neighborVertex.setCost(currentVertex.getCost()+edge.getWeight());
+                    // remove previoulsy added edges, if necessary
+                    for (Edge newEdge: g.getEdges()) {
+                        if(newEdge.contains(neighborVertex)) {
+                            newEdges.remove(newEdge);
+                        }
+                    }
+                    newEdges.add(edge);
+                }
+            }
+
+            // search for the next vertex
+            double smallestCost = 999;
+            for (Vertex v: vertices) {
+                // if the vertex is not burned and has lowest cost, select it as next vertex
+                if(!v.getBurned() && (v.getCost() < smallestCost) && (Double.compare(v.getCost(), 0) != 0)) {
+                    // update lowest cost
+                    smallestCost = v.getCost();
+                    currentVertex = v;
+                }
+            }
+        }
+
+        return new Graph(newEdges);
     }
 }
