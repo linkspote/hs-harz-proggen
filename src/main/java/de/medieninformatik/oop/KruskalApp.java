@@ -42,18 +42,6 @@ public class KruskalApp extends Application {
     public void init() {
         List<String> args = getParameters().getUnnamed(); // Kommandozeilenparameter
 
-        // Output to inform user about options
-        System.out.println(
-                "Bitte geben Sie nachfolgend an, welchen Algorithmus Sie zur grafischen Darstellung nutzen moechten.\n"
-                        + "D - Dijkstra-Algorithmus\n"
-                        + "K - Kruskal-Algorithmus\n\n"
-                        + "Eingabe: "
-        );
-
-        // Init scanner and store input
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-
         // Init loop variable
         // 0 - false input
         // 1 - dijkstra algo
@@ -61,6 +49,18 @@ public class KruskalApp extends Application {
         algo = 0;
 
         do {
+            // Output to inform user about options
+            System.out.println(
+                    "Bitte geben Sie nachfolgend an, welchen Algorithmus Sie zur grafischen Darstellung nutzen moechten.\n"
+                            + "D - Dijkstra-Algorithmus\n"
+                            + "K - Kruskal-Algorithmus\n\n"
+                            + "Eingabe: "
+            );
+
+            // Init scanner and store input
+            Scanner scanner = new Scanner(System.in);
+            String input = scanner.nextLine();
+
             // Check input of user for correct algorithm selection
             if (input.equals("D") || input.equals("d")) {
                 System.out.println("Sie haben den Dijkstra-Algorithmus ausgewaehlt. Der Graph wird in Kuerze angezeigt.");
