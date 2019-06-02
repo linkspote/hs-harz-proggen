@@ -16,11 +16,15 @@ import javafx.stage.Stage;
  * @version 1.0
  */
 public class Main extends Application {
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("index.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("scene.fxml"));
+
         primaryStage.setTitle("Einfacher Texteditor");
+
         primaryStage.setScene(new Scene(root, 500, 450));
+
         primaryStage.show();
     }
 
