@@ -1,6 +1,6 @@
 package de.medieninformatik.cg;
 
-import javafx.application.Application;
+import javax.swing.*;
 
 /**
  * The {@code Main} class contains the main() method which represents the main execution point of each program.
@@ -18,7 +18,15 @@ public class Program {
      * @param args Represents a String array which contains parameters to configure the program execution.
      */
     public static void main (String[] args) {
-        // Do something else here
-        Application.launch(EarCutting.class, args);
+        EarCutting ec = new EarCutting();
+
+        JFrame frame = new JFrame("Interactive Ear Cutting");
+        frame.add(ec);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        ec.requestFocus();
     }
 }
