@@ -1,4 +1,6 @@
-package de.medieninformatik.oop;
+package de.medieninformatik.cg;
+
+import javafx.application.Application;
 
 /**
  * The {@code Main} class contains the main() method which represents the main execution point of each program.
@@ -9,7 +11,7 @@ package de.medieninformatik.oop;
  * @author Kevin Kleiber (m26675)
  * @version 1.0
  */
-public class Main {
+public class Program {
     /**
      * This method is the main execution point of each program.
      *
@@ -17,6 +19,6 @@ public class Main {
      */
     public static void main (String[] args) {
         // Do something else here
-        System.out.println("Hello world!");
+        Application.launch(EarCutting.class, args);
     }
 }
