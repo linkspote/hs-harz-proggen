@@ -3,19 +3,18 @@ package de.medieninformatik.cg;
 import javax.swing.*;
 
 /**
- * The {@code Main} class contains the main() method which represents the main execution point of each program.
+ * The {@code Program} class contains the main() method which is responsible for creating the application window and
+ * providing its functionality.
  *
- * <p>ATTENTION: This program ist just an example!
- *
- * @author Kai Gutsmann (m26667)
  * @author Kevin Kleiber (m26675)
  * @version 1.0
  */
 public class Program {
     /**
-     * This method is the main execution point of each program.
+     * Creates a new instance of the interactive ear cutting application and defines some settings of the application
+     * window.
      *
-     * @param args Represents a String array which contains parameters to configure the program execution.
+     * @param args Represents a String array which contains parameters to configure the polygon points TODO: Implement command line parameters (maybe)
      */
     public static void main (String[] args) {
         EarCutting ec = new EarCutting();
