@@ -7,8 +7,8 @@ plugins {
 group 'de.medieninformatik.oop'
 version '1.0'
 
-sourceCompatibility = 12
-targetCompatibility = 12
+sourceCompatibility = 11
+targetCompatibility = 11
 
 // Only works when root directory is a class of the package stored in group
 // mainClassName = group + '.' + rootDir.name

@@ -155,7 +155,7 @@ public class KDTree {
                 Math.abs(p_pivot.getY() - p_rootNode.coordinates.getY());
 
         // If current axis distance is shorter chances are good that distance from opposite to pivot point is shorter
-        if (Double.compare(axisDistance, _longestDistance) < 0)
+        if (_mNeighbours.size() < _maxEntries || Double.compare(axisDistance, _longestDistance) < 0)
             findKNN(opposite, p_pivot, p_depth + 1);
     }
 }
